@@ -96,4 +96,13 @@ public class CardTests {
 		
 	}
 
+	@Test(priority = 5)
+	public void testgetCardField() {
+		Response response =
+				CardEndpoints.getCardField("654a914a8f06f94ef3bb6a69");
+		Assert.assertEquals(response.getStatusCode(), 200);
+		response.then().body("_value", equalTo("hello this is description."))
+		.log().all();
+	}
+
 }

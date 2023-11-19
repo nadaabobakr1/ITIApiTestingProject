@@ -23,6 +23,8 @@ public class Routes {
 	
 
 	public static String delete_card_url =base_url +"/{id}?"+key+token;
+	
+	public static String get_card_field_url =base_url +"/{id}"+"/desc?"+key+token;
 
 	public static String post_label_url = base_url_Label +"?{idBoard}/{name}/{color}"+"&"+key+token;
 
