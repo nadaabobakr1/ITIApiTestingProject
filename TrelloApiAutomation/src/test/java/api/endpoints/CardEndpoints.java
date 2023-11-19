@@ -77,5 +77,16 @@ public static Response deleteCard(String id){
 	return response;
 	   
 }
-
+public static Response getCardField(String id){
+	
+	
+	Response response =
+		given()
+	   .pathParam("id",id)
+	.when() 
+	   .get(Routes.get_card_field_url);
+	
+	return response;
+	   
+}
 }
