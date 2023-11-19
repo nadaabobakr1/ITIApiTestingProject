@@ -5,11 +5,20 @@ public class Card {
 	 String id="";
 	  String idList="";
 	  String name="";
+	  String desc="";
+	  String cardname="";
+	  String description="";
 	  
 	  
 
 	public String getName() {
 		return name;
+	}
+	public String getDesc() {
+		return desc;
+	}
+	public void setDesc(String desc) {
+		this.desc = desc;
 	}
 	public void setName(String name) {
 		this.name = name;
@@ -20,8 +29,7 @@ public class Card {
 	public void setIdList(String idList) {
 		this.idList = idList;
 	}
-	String cardname="";
-	  String description="";
+	
 	  
 	
 	
