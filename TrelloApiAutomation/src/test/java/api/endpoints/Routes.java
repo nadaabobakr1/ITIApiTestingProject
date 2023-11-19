@@ -23,6 +23,8 @@ public static String post_card_url =base_url +"?{idList}/{name}"+"&"+key+token;
 	
 
 	public static String delete_card_url =base_url +"/{id}?"+key+token;
+	
+	public static String get_card_field_url =base_url +"/{id}"+"/desc?"+key+token;
 
 
 }
