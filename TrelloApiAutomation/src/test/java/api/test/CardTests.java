@@ -23,6 +23,7 @@ import static org.hamcrest.Matchers.*;
 public class CardTests {
 	
 	Card cardPayload;
+	String cardIdTobeDeleted ="6552a7497f3157effcaa60f7";
 
 	@BeforeClass
     public   void setUpData() {
@@ -90,7 +91,7 @@ public class CardTests {
 	@Test(priority = 4)
 	public void testDeleteCard() {
 		Response response =
-				CardEndpoints.deleteCard("6552a7497f3157effcaa60f7");
+				CardEndpoints.deleteCard(cardIdTobeDeleted);
 		Assert.assertEquals(response.getStatusCode(), 200);
 		
 		
